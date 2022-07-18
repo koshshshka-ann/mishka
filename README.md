@@ -1,4 +1,4 @@
-# Личный проект «Кэт энэрджи»
+# Личный проект «Mishka»
 
 * Студент: [Сиряк Анна](https://up.htmlacademy.ru/adaptive/25/user/1995309).
 * Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
