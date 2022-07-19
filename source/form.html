@@ -69,6 +69,137 @@
   </header>
 
   <main class="main-container">
+    <div class="form-intro">
+      <div class="form-intro__title-wrapper">
+        <h1 class="form-intro__title">Вязание на заказ</h1>
+      </div>
+      <div class="form-intro__description-wrapper">
+        <p class="form-intro__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+    </div>
+    <form class="form-section" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="form-section__block form-block">
+        <div class="form-block__title-wrapper">
+          <h2 class="form-block__title">Тип</h2>
+        </div>
+        <ul class="form-block__list">
+          <li class="form-block__item">
+            <label class="form-block__label" for="interior">
+              <span class="form-block__control form-block__control--radio"></span>
+              <input class="visually-hidden form-block__input" type="radio" id="interior" name="type" value="interior" checked>
+              Аксессуар для интерьера
+            </label>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="toy">
+              <span class="form-block__control form-block__control--radio"></span>
+              <input class="visually-hidden form-block__input" type="radio" id="toy" name="type" value="toy" checked>
+              Детская игрушка
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-section__block form-block">
+        <div class="form-block__title-wrapper">
+          <h2 class="form-block__title">Цвет</h2>
+        </div>
+        <ul class="form-block__list">
+          <li class="form-block__item">
+            <label class="form-block__label" for="white">
+              <span class="form-block__control form-block__control--check-box"></span>
+              <input class="visually-hidden form-block__input" type="checkbox" id="white" name="white" checked>
+              Белый
+            </label>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="grey">
+              <span class="form-block__control form-block__control--check-box"></span>
+              <input class="visually-hidden form-block__input" type="checkbox" id="grey" name="grey" checked>
+              Серый
+            </label>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="tiffany">
+              <span class="form-block__control form-block__control--check-box"></span>
+              <input class="visually-hidden form-block__input" type="checkbox" id="tiffany" name="tiffany">
+              Тиффани
+            </label>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="black">
+              <span class="form-block__control form-block__control--check-box"></span>
+              <input class="visually-hidden form-block__input" type="checkbox" id="black" name="black">
+              Черный
+            </label>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="pink">
+              <span class="form-block__control form-block__control--check-box"></span>
+              <input class="visually-hidden form-block__input" type="checkbox" id="pink" name="pink">
+              Розовый
+            </label>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="orange">
+              <span class="form-block__control form-block__control--check-box"></span>
+              <input class="visually-hidden form-block__input" type="checkbox" id="orange" name="orange">
+              Оранжевый
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-section__block form-block">
+        <div class="form-section__title-wrapper">
+          <h2 class="form__block-title">ФИО</h2>
+        </div>
+        <ul class="form-block__list">
+          <li class="form-block__item">
+            <label class="form-block__label" for="first-name">Имя:</label>
+            <input class="form-block__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="last-name">Фамилия:</label>
+            <input class="form-block__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+          </li>
+          <li class="form-block__item">
+            <label class="form-block__label" for="father-name">Отчество:</label>
+            <input class="form-block__input" id="father-name" type="text" name="father-name" placeholder="Отчество, если желаете">
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form-section__block form-block">
+        <fieldset class="form-block__area">
+          <div class="form-block__title-wrapper">
+            <h2 class="form-block__title">ТЕЛ</h2>
+          </div>
+          <div class="form-block__item">
+            <input class="form-block__input" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </div>
+        </fieldset>
+        <fieldset class="form-block__area">
+          <div class="form-block__title-wrapper">
+            <h2 class="form-block__title">E-MAIL</h2>
+          </div>
+          <div class="form-block__item">
+            <input class="form-block__input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-section__block form-block">
+        <fieldset class="form-block__area">
+          <div class="form-block__title-wrapper">
+            <h2 class="form-block__title">ДОП</h2>
+          </div>
+          <div class="form-block__item">
+            <textarea class="form-block__input" id="comments" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </fieldset>
+        <div class="form-block__submit-area">
+          <p class="form-block__submit-note">*Поля обязательны для заполнения</p>
+          <button class="button form__submit-button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        </div>
+      </div>
+    </form>
   </main>
 
   <footer class="main-footer">
