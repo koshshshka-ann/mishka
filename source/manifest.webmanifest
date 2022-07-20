@@ -1,7 +1,7 @@
 {
-  "name": "HTML Academy: Кэт энэрджи",
-  "short_name": "Кэт энэрджи",
-  "description": "Кэт энэрджи",
+  "name": "HTML Academy: Мишка",
+  "short_name": "Мишка",
+  "description": "Учебный проект",
   "orientation": "portrait",
   "icons": [
     { "src": "img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
