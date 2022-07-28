@@ -1,0 +1,10 @@
+.main-header {
+  min-height: 79px;
+  z-index: 1;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 88px;
+    background-color: transparent;
+  }
+}

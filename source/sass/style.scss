@@ -1,5 +1,11 @@
-//@import "fonts";
-//@import "variables";
-//@import "mixins";
-//@import "global";
-//@import "blocks/page-body";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/page-body.scss";
+@import "blocks/main-container.scss";
+@import "blocks/page-title.scss";
+@import "blocks/promo-wrapper.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/menu.scss";
