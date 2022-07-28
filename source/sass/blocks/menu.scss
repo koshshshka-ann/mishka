@@ -31,6 +31,34 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--main {
+      background-color: $white;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+      }
+
+      &::before {
+        height: 100%;
+        width: 150vw;
+        left: -30vw;
+        background-color: $white;
+        top: 0;
+      }
+
+      &::after {
+        width: 150vw;
+        height: 1px;
+        background-color: $basic-grey-lines;
+        bottom: 0;
+        left: -30vw;
+        z-index: 1;
+      }
+    }
+
     &--activity {
       background-color: transparent;
     }
@@ -109,6 +137,7 @@
   font-size: 17px;
   line-height: 24px;
   color: $black;
+  cursor: pointer;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);

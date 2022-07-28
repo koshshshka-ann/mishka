@@ -166,7 +166,12 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
+    max-width: 410px;
   }
+}
+
+.main-nav__user-menu {
+  max-width: 410px;
 }
 
 .main-nav__activity-menu {
@@ -175,6 +180,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: auto;
+    max-width: 700px;
     display: flex;
     flex-wrap: wrap;
   }
