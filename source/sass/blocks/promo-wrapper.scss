@@ -1,16 +1,8 @@
 .promo-wrapper {
-  min-height: 568px;
-  background-image: url("../img/promo-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom 133px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-mobile@2x.jpg");
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 846px;
     background-image: url("../img/promo-tablet.jpg");
+    background-repeat: no-repeat;
     background-position: center bottom 12px;
 
     @media (min-resolution: 2dppx) {

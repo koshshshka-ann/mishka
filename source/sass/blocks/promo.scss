@@ -1,0 +1,149 @@
+.promo {
+  min-height: 489px;
+  background-image: url("../img/promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom 133px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.promo__title {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 74px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding-top: 88px;
+    padding-bottom: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 91px;
+    padding-bottom: 355px;
+  }
+}
+
+.promo__categories {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.promo__item {
+  &--interior {
+    background-color: $mint-light;
+  }
+
+  &--toys {
+    background-color: $mint-medium;
+  }
+}
+
+.promo__button {
+  width: 260px - 130px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-right: 130px;
+  padding-bottom: 31px;
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: $white;
+  position: relative;
+
+  &--interior {
+    &::after {
+      content: "";
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icons/icon-interior.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 23px;
+      right: 6px;
+      opacity: 0.5;
+    }
+  }
+
+  &--toys {
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icons/icon-toys.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 21px;
+      right: -3px;
+      opacity: 0.5;
+    }
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 334px - 36px - 167px;
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 167px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior {
+      &::after {
+        top: 30px;
+        right: 36px;
+      }
+    }
+
+    &--toys {
+      &::after {
+        top: 31px;
+        right: 33px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px - 37px - 350px;
+    padding-right: 350px;
+    padding-left: 37px;
+
+    &--toys {
+      &::after {
+        right: 35px;
+      }
+    }
+  }
+}
