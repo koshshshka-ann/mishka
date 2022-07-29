@@ -1,0 +1,32 @@
+.copyright {
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.copyright__link {
+  width: 252px - 69px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+
+  &:hover .copyright__logo {
+    fill: $mint-link;
+  }
+
+  &:active .copyright__logo {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  fill: $mint-light;
+}
