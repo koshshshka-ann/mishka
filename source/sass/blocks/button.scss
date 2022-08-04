@@ -1,0 +1,44 @@
+.button {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $basic-grey;
+  border: 2px solid $basic-grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-grey;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+
+  &--fill {
+    background-color: $mint-light;
+    color: $white;
+    border-color: $mint-light;
+
+    &:hover {
+      background-color: $mint-medium;
+      border-color: $mint-medium;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

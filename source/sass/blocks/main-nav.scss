@@ -283,15 +283,15 @@
     &--main {
       font-size: 15px;
       width: 167px;
-      padding-top: 20.5px;
-      padding-bottom: 20.5px;
+      padding-top: 20px;
+      padding-bottom: 21px;
       padding-left: 0;
     }
 
     &--search,
     &--cart {
       width: max-content;
-      min-height: 88px - 32.5px - 31.5px;
+      min-height: 88px - 32px - 32px;
     }
 
     &--search {
@@ -300,8 +300,8 @@
     }
 
     &--cart {
-      padding-top: 32.5px;
-      padding-bottom: 31.5px;
+      padding-top: 32px;
+      padding-bottom: 32px;
       padding-left: 82px;
     }
   }
@@ -311,7 +311,7 @@
       width: 184px;
       font-size: 17px;
       padding-top: 32.5px;
-      padding-bottom: 31.5px;
+      padding-bottom: 32px;
     }
 
     &--activity {
@@ -364,8 +364,8 @@
     order: 3;
     display: block;
     margin: 0;
-    padding-top: 20.5px;
-    padding-bottom: 20.5px;
+    padding-top: 20px;
+    padding-bottom: 21px;
     font-size: 15px;
     line-height: 24px;
   }
