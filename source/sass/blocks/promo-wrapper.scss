@@ -4,9 +4,11 @@
     background-image: url("../img/promo-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center bottom 12px;
+    background-size: auto, cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-tablet@2x.jpg");
+      background-size: 1150px auto, cover;
     }
   }
 

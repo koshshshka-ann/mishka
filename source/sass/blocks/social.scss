@@ -1,26 +1,12 @@
 .social {
-  margin: 0 auto;
   padding-right: 59px;
   padding-bottom: 28px;
   padding-left: 59px;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 280px;
-    height: 1px;
-    background-color: #e5e5e5;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-
-    &::after {
-      display: none;
-    }
+    border-bottom: none;
   }
 }
 

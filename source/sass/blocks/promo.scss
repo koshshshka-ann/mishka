@@ -3,9 +3,11 @@
   background-image: url("../img/promo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom 133px;
+  background-size: auto, cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-mobile@2x.jpg");
+    background-size: 575px auto, cover;
   }
 
   @media (min-width: $tablet-width) {
