@@ -1,4 +1,6 @@
 .promo-wrapper {
+  background-color: #f9f9f9;
+
   @media (min-width: $tablet-width) {
     min-height: 846px;
     background-image: url("../img/promo-tablet.jpg");
@@ -15,6 +17,5 @@
   @media (min-width: $desktop-width) {
     min-height: 851px;
     background-position: center bottom 17px;
-    background-color: #f9f9f9;
   }
 }

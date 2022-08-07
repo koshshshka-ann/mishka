@@ -27,22 +27,15 @@
     background-color: transparent;
 
     &::before {
-      display: none;
-    }
-
-    &::after {
-      top: 89px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      display: block;
       height: 89px;
       width: 100%;
       left: 0;
       top: 0;
       background-color: $white;
+    }
+
+    &::after {
+      top: 89px;
     }
   }
 }
