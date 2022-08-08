@@ -42,9 +42,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 24px;
+      width: 1050px;
+      height: 23px;
       background-image: url("../img/zigzag-line-desktop.svg");
-      bottom: -24px;
+      bottom: -23px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
