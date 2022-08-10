@@ -1,0 +1,161 @@
+.form-block {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+
+    &--radio {
+      padding-bottom: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+  }
+}
+
+.form-block__container {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1040px - 110px;
+  }
+}
+
+.form-block__area {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+.form-block__title-wrapper {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: $mint-elements;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 216px - 50px;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+
+    &--radio,
+    &--checkbox {
+      padding-top: 12px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 115px;
+  }
+}
+
+.form-block__title {
+  width: fit-content;
+  margin: 0;
+  padding-right: 19px;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $mint-light;
+  background-color: $white;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    background-color: transparent;
+  }
+}
+
+.form-block__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  list-style-type: none;
+
+  &--radio {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-top: 0;
+
+    &--radio {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.form-block__item {
+  &--radio {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+}
+
+.form-block__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+  display: flex;
+  align-items: center;
+}
+
+.form-block__control {
+  display: block;
+  position: relative;
+
+  &--radio {
+    min-width: 38px;
+    height: 38px;
+    margin-right: 19px;
+    border: 2px solid $basic-grey;
+    border-radius: 50%;
+  }
+}
+
+.form-block__input[type="radio"]:checked + .form-block__control--radio::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: $mint-elements;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -49%);
+}
+
+.form-block__label-text {
+  display: inline-block;
+  width: 200px;
+}
