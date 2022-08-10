@@ -1,0 +1,90 @@
+.form-intro__title-container {
+  padding-top: 73px;
+  padding-bottom: 74px;
+  background-color: $basic-grey-background;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    padding-bottom: 80px;
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
+    padding-bottom: 100px;
+
+    &::after {
+      height: 34px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      bottom: -17px;
+    }
+  }
+}
+
+.form-intro__title-wrapper {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.form-intro__title {
+  text-align: center;
+}
+
+.form-intro__description-container {
+  padding-top: 17px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 63px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 99px;
+    padding-bottom: 64px;
+  }
+}
+
+.form-intro__description-wrapper {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.form-intro__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

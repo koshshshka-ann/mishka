@@ -18,4 +18,14 @@
     min-height: 851px;
     background-position: center bottom 17px;
   }
+
+  &--noindex {
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      min-height: auto;
+      background-image: none;
+      background-color: $basic-grey-background;
+    }
+  }
 }
