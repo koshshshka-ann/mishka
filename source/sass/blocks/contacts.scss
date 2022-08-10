@@ -145,6 +145,14 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      &::after {
+        bottom: -4px;
+      }
+    }
+  }
 }
 
 .contacts__map-wrapper {
