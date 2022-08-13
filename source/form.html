@@ -98,12 +98,12 @@
               <label class="form-block__label form-block__label--radio" for="interior">
                 <input class="visually-hidden form-block__input" type="radio" id="interior" name="type" value="interior" checked>
                 <span class="form-block__control form-block__control--radio"></span>
-                Аксессуар для интерьера
+                <span class="form-block__label-text">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form-block__item form-block__item--radio">
               <label class="form-block__label form-block__label--radio" for="toy">
-                <input class="visually-hidden form-block__input" type="radio" id="toy" name="type" value="toy" checked>
+                <input class="visually-hidden form-block__input" type="radio" id="toy" name="type" value="toy">
                 <span class="form-block__control form-block__control--radio"></span>
                 <span class="form-block__label-text">Детская игрушка</span>
               </label>
@@ -111,73 +111,77 @@
           </ul>
         </div>
       </fieldset>
-      <fieldset class="form-block">
-        <div class="form-block__title-wrapper form-block__title-wrapper--checkbox">
-          <h2 class="form-block__title">Цвет</h2>
+      <fieldset class="form-block  form-block--darker form-block--checkbox">
+        <div class="form-block__container">
+          <div class="form-block__title-wrapper form-block__title-wrapper--checkbox">
+            <h2 class="form-block__title">Цвет</h2>
+          </div>
+          <ul class="form-block__list form-block__list--checkbox">
+            <li class="form-block__item form-block__item--checkbox">
+              <label class="form-block__label" for="white">
+                <input class="visually-hidden form-block__input" type="checkbox" id="white" name="white" checked>
+                <span class="form-block__control form-block__control--checkbox"></span>
+                Белый
+              </label>
+            </li>
+            <li class="form-block__item form-block__item--checkbox">
+              <label class="form-block__label" for="grey">
+                <input class="visually-hidden form-block__input" type="checkbox" id="grey" name="grey" checked>
+                <span class="form-block__control form-block__control--checkbox"></span>
+                Серый
+              </label>
+            </li>
+            <li class="form-block__item form-block__item--checkbox">
+              <label class="form-block__label" for="tiffany">
+                <input class="visually-hidden form-block__input" type="checkbox" id="tiffany" name="tiffany">
+                <span class="form-block__control form-block__control--checkbox"></span>
+                Тиффани
+              </label>
+            </li>
+            <li class="form-block__item form-block__item--checkbox">
+              <label class="form-block__label" for="black">
+                <input class="visually-hidden form-block__input" type="checkbox" id="black" name="black">
+                <span class="form-block__control form-block__control--checkbox"></span>
+                Черный
+              </label>
+            </li>
+            <li class="form-block__item form-block__item--checkbox">
+              <label class="form-block__label" for="pink">
+                <input class="visually-hidden form-block__input" type="checkbox" id="pink" name="pink">
+                <span class="form-block__control form-block__control--checkbox"></span>
+                Розовый
+              </label>
+            </li>
+            <li class="form-block__item form-block__item--checkbox">
+              <label class="form-block__label" for="orange">
+                <input class="visually-hidden form-block__input" type="checkbox" id="orange" name="orange">
+                <span class="form-block__control form-block__control--checkbox"></span>
+                Оранжевый
+              </label>
+            </li>
+          </ul>
         </div>
-        <ul class="form-block__list">
-          <li class="form-block__item form-block__item--checkbox">
-            <label class="form-block__label" for="white">
-              <span class="form-block__control form-block__control--checkbox"></span>
-              <input class="visually-hidden form-block__input" type="checkbox" id="white" name="white" checked>
-              Белый
-            </label>
-          </li>
-          <li class="form-block__item form-block__item--checkbox">
-            <label class="form-block__label" for="grey">
-              <span class="form-block__control form-block__control--checkbox"></span>
-              <input class="visually-hidden form-block__input" type="checkbox" id="grey" name="grey" checked>
-              Серый
-            </label>
-          </li>
-          <li class="form-block__item form-block__item--checkbox">
-            <label class="form-block__label" for="tiffany">
-              <span class="form-block__control form-block__control--checkbox"></span>
-              <input class="visually-hidden form-block__input" type="checkbox" id="tiffany" name="tiffany">
-              Тиффани
-            </label>
-          </li>
-          <li class="form-block__item form-block__item--checkbox">
-            <label class="form-block__label" for="black">
-              <span class="form-block__control form-block__control--checkbox"></span>
-              <input class="visually-hidden form-block__input" type="checkbox" id="black" name="black">
-              Черный
-            </label>
-          </li>
-          <li class="form-block__item form-block__item--checkbox">
-            <label class="form-block__label" for="pink">
-              <span class="form-block__control form-block__control--checkbox"></span>
-              <input class="visually-hidden form-block__input" type="checkbox" id="pink" name="pink">
-              Розовый
-            </label>
-          </li>
-          <li class="form-block__item form-block__item--checkbox">
-            <label class="form-block__label" for="orange">
-              <span class="form-block__control form-block__control--checkbox"></span>
-              <input class="visually-hidden form-block__input" type="checkbox" id="orange" name="orange">
-              Оранжевый
-            </label>
-          </li>
-        </ul>
       </fieldset>
-      <fieldset class="form-block">
-        <div class="form-section__title-wrapper">
-          <h2 class="form__block-title">ФИО</h2>
+      <fieldset class="form-block form-block--name">
+        <div class="form-block__container">
+          <div class="form-block__title-wrapper form-block__title-wrapper--name">
+            <h2 class="form-block__title">ФИО</h2>
+          </div>
+          <ul class="form-block__list form-block__list--name">
+            <li class="form-block__item form-block__item--name">
+              <label class="form-block__label form-block__label--first-name" for="first-name">Имя:</label>
+              <input class="form-block__input form-block__input--name" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="form-block__item form-block__item--name">
+              <label class="form-block__label form-block__label--last-name" for="last-name">Фамилия:</label>
+              <input class="form-block__input form-block__input--name" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="form-block__item form-block__item--name">
+              <label class="form-block__label form-block__label--father-name" for="father-name">Отчество:</label>
+              <input class="form-block__input form-block__input--name" id="father-name" type="text" name="father-name" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
         </div>
-        <ul class="form-block__list">
-          <li class="form-block__item">
-            <label class="form-block__label" for="first-name">Имя:</label>
-            <input class="form-block__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-          </li>
-          <li class="form-block__item">
-            <label class="form-block__label" for="last-name">Фамилия:</label>
-            <input class="form-block__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
-          </li>
-          <li class="form-block__item">
-            <label class="form-block__label" for="father-name">Отчество:</label>
-            <input class="form-block__input" id="father-name" type="text" name="father-name" placeholder="Отчество, если желаете">
-          </li>
-        </ul>
       </fieldset>
       <div class="form-block">
         <fieldset class="form-block__area">
@@ -185,7 +189,7 @@
             <h2 class="form-block__title">ТЕЛ</h2>
           </div>
           <div class="form-block__item">
-            <input class="form-block__input" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="form-block__input form-block__input--contacts" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <svg class="form-block__icon" width="25" height="24">
               <use href="img/sprite.svg#icon-phone"></use>
             </svg>
@@ -196,7 +200,7 @@
             <h2 class="form-block__title">E-MAIL</h2>
           </div>
           <div class="form-block__item">
-            <input class="form-block__input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+            <input class="form-block__input form-block__input--contacts" id="email" type="email" name="email" placeholder="Ваш Email*" required>
             <svg class="form-block__icon" width="32" height="32">
               <use href="img/sprite.svg#icon-email"></use>
             </svg>
