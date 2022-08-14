@@ -209,17 +209,22 @@
           </div>
         </div>
       </fieldset>
-      <div class="form-block__area">
-        <div class="form-block__title-wrapper">
-          <h2 class="form-block__title">ДОП</h2>
+      <div class="form-block form-block--adding">
+        <div class="form-block__container form-block__container--adding">
+          <div class="form-block__title-wrapper form-block__title-wrapper--adding">
+            <h2 class="form-block__title">ДОП</h2>
+          </div>
+          <div class="form-block__item form-block__item--adding">
+            <textarea class="form-block__input form-block__input--adding" id="comments" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </div>
-        <div class="form-block__item">
-          <textarea class="form-block__input" id="comments" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </div>
-      </fieldset>
-        <div class="form-block__submit-area">
+      </div>
+      <div class="form-block__submit-area">
+        <div class="form-block__container form-block__container--submit">
           <p class="form-block__submit-note">*Поля обязательны для заполнения</p>
-          <button class="button form__submit-button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          <div class="form-block__button-wrapper">
+            <button class="button form__submit-button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          </div>
         </div>
       </div>
     </form>
