@@ -61,10 +61,8 @@
 }
 
 .promo__button {
-  width: 260px - 130px;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 24px;
-  padding-right: 130px;
   padding-bottom: 31px;
   display: block;
   font-size: 19px;
@@ -84,7 +82,8 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 23px;
-      right: 6px;
+      left: 50%;
+      transform: translateX(84px);
       opacity: 0.5;
     }
   }
@@ -99,7 +98,8 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 21px;
-      right: -3px;
+      left: 50%;
+      transform: translateX(73px);
       opacity: 0.5;
     }
   }
@@ -147,5 +147,15 @@
         right: 35px;
       }
     }
+  }
+}
+
+.promo__text-button {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }

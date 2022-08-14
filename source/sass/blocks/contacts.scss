@@ -18,8 +18,10 @@
 }
 
 .contacts__content-wrapper {
-  width: 350px;
-  padding-left: 175px;
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    padding-left: 175px;
+  }
 }
 
 .contacts__title-wrapper {
@@ -140,6 +142,14 @@
     &--email {
       &::after {
         bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      &::after {
+        bottom: -4px;
       }
     }
   }
