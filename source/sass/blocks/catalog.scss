@@ -1,0 +1,32 @@
+.catalog {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+    padding-bottom: 57px;
+  }
+}
+
+.catalog__list {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    gap: 51px;
+  }
+}

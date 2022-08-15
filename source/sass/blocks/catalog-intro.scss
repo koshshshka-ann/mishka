@@ -1,0 +1,36 @@
+.catalog-intro {
+  background-color: $basic-grey-background;
+  padding-top: 73px;
+  padding-bottom: 74px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    padding-top: 34px;
+    padding-bottom: 87px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 35px;
+      padding-bottom: 113px;
+
+      &::after {
+        height: 34px;
+        background-image: url("../img/zigzag-fill-desktop.svg");
+      }
+    }
+  }
+}
+
+.catalog-intro__title {
+  text-align: center;
+}
