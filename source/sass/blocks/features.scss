@@ -56,9 +56,7 @@
     width: 668px;
     display: grid;
     grid-template-columns: 334px 334px;
-    grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
     row-gap: 55px;
-    grid-auto-flow: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,12 +140,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     padding-top: 56px;
     margin-bottom: 0;
     font-size: 20px;
     line-height: 22px;
 
     &--price {
+      order: 3;
+
       &::before {
         top: 3px;
         left: 1px;
@@ -155,6 +156,8 @@
     }
 
     &--likes {
+      order: 5;
+
       &::before {
         top: 8px;
         left: 8px;
@@ -162,6 +165,8 @@
     }
 
     &--tenderness {
+      order: 2;
+
       &::before {
         top: 4px;
         left: 2px;
@@ -169,6 +174,8 @@
     }
 
     &--support {
+      order: 4;
+
       &::before {
         top: 6px;
         left: -7px;
@@ -176,6 +183,8 @@
     }
 
     &--pack {
+      order: 6;
+
       &::before {
         top: 4px;
         left: 2px;

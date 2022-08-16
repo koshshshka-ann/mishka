@@ -159,6 +159,7 @@
   &--user {
     @media (min-width: $tablet-width) {
       min-width: 347px;
+      max-width: 530px;
       position: relative;
       display: flex;
       flex-wrap: wrap;
@@ -199,7 +200,7 @@
     height: 1px;
     position: absolute;
     left: 0;
-    top: 79px;
+    bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
