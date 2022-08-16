@@ -1,5 +1,5 @@
 .product {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   &:hover {
     .product__description {
@@ -16,11 +16,19 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -39,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     width: 316px;
-    height: 452px;
+    height: 462px;
   }
 }
 
@@ -51,9 +59,17 @@
   position: relative;
   border: 1px solid $basic-grey-lines;
 
+  &--bunny {
+    padding-top: 27px;
+  }
+
+  &--bigbasket {
+    padding-top: 24px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 34px;
+    padding-left: 33px;
     padding-bottom: 26px;
     flex-grow: 1;
   }
@@ -70,14 +86,31 @@
   border-bottom: 1px solid $basic-grey-lines;
 
   @media (min-width: $tablet-width) {
-    min-height: 260px - 27px - 27px;
+    box-sizing: border-box;
+    min-height: 260px;
     padding-top: 27px;
     padding-bottom: 27px;
+
+    &--basket {
+      padding-top: 26px;
+    }
+
+    &--bigbasket {
+      padding-top: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 124px - 27px - 13px;
+    min-height: 125px;
     padding-bottom: 13px;
+
+    &--basket {
+      padding-top: 27px;
+    }
+
+    &--bigbasket {
+      padding-top: 27px;
+    }
   }
 }
 
@@ -93,8 +126,26 @@
   font-size: 17px;
   line-height: 24px;
 
+  &--bigbasket {
+    padding-bottom: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
+
+    &--basket {
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--basket {
+      padding-bottom: 6px;
+    }
+
+    &--bigbasket {
+      padding-bottom: 6px;
+    }
   }
 }
 
@@ -109,9 +160,27 @@
 }
 
 .product__cart-area {
-  padding-top: 22px;
+  padding-top: 23px;
   display: flex;
   justify-content: space-between;
+
+  &--basket {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--bunny {
+      padding-top: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+
+    &--bunny {
+      padding-top: 22px;
+    }
+  }
 }
 
 .product__price {

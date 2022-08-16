@@ -1,7 +1,7 @@
 .production {
   width: 260px;
   margin: 0 auto;
-  padding-bottom: 58px;
+  padding-bottom: 59px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -15,7 +15,7 @@
 }
 
 .production__wrapper {
-  padding-top: 21px;
+  padding-top: 22px;
   background-color: $white;
   border: 1px solid $basic-grey-lines;
 
@@ -41,7 +41,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 682px 367px;
-    grid-template-rows: minmax (171px auto) minmax (284px auto);
+    grid-template-rows: minmax (175px auto) minmax (287px auto);
     border: 1px solid $basic-grey-lines;
   }
 }
@@ -49,7 +49,7 @@
 .production__title {
   margin: 0;
   padding-left: 91px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -62,12 +62,12 @@
     height: 32px;
     background-image: url("../img/icons/icon-video.svg");
     position: absolute;
-    left: 34px;
-    top: 4px;
+    left: 33px;
+    top: 7px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 41px;
+    padding-top: 40px;
     padding-bottom: 0;
     padding-left: 107px;
     font-size: 20px;
@@ -82,14 +82,14 @@
 
   @media (min-width: $desktop-width) {
     width: 367px - 79px - 57px;
-    padding-top: 96px;
+    padding-top: 93px;
     padding-left: 79px;
     padding-right: 57px;
     border: none;
 
     &::before {
       left: 79px;
-      top: 37px;
+      top: 39px;
     }
   }
 }
@@ -159,9 +159,9 @@
 
 .production__description-wrapper {
   padding-top: 35px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
   padding-left: 34px;
-  padding-right: 34px;
+  padding-right: 30px;
   position: relative;
 
   &::after {
@@ -178,6 +178,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 24px;
     padding-bottom: 46px;
+    padding-left: 40px;
+    padding-right: 40px;
     border: 1px solid $basic-grey-lines;
     border-top: none;
 

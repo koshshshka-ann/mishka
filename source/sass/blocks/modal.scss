@@ -18,10 +18,10 @@
 
   &--index {
     top: 1046px;
+  }
 
-    &--catalog {
-      top: 801px;
-    }
+  &--catalog {
+    top: 801px;
   }
 
   @media (min-width: $tablet-width) {
