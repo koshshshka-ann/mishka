@@ -243,37 +243,41 @@
 </footer>
 
 <div class="modal">
-  <div class="modal__wrapper">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="modal__fieldset size-choice">
-        <legend class="size-choice__title">Выберите размер:</legend>
-        <ul class="size-choice__list">
-          <li class="size-choice__item">
-            <label class="size-choice__label">
-              <span class="visually-hidden">Маленький размер</span>
-              <input class="visually-hidden size-choice__input" type="radio" name="size" value="s" checked>
-              <span class="size-choice__control"></span>
-            </label>
-          </li>
-          <li class="size-choice__item">
-            <label class="size-choice__label">
-              <span class="visually-hidden">Средний размер</span>
-              <input class="visually-hidden size-choice__input" type="radio" name="size" value="m">
-              <span class="size-choice__control"></span>
-            </label>
-          </li>
-          <li class="size-choice__item">
-            <label class="size-choice__label">
-              <span class="visually-hidden">Большой размер</span>
-              <input class="visually-hidden size-choice__input" type="radio" name="size" value="l">
-              <span class="size-choice__control"></span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="size-choice__button button button--fill" type="submit">Добавить</button>
-    </form>
+  <div class="modal__container modal__container--catalog">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset size-select">
+          <legend class="size-select__title">Выберите размер:</legend>
+          <ul class="size-select__list">
+            <li class="size-select__item">
+              <label class="size-select__label">
+                <span class="visually-hidden">Маленький размер</span>
+                <input class="visually-hidden size-select__input" type="radio" name="size" value="s" checked>
+                <span class="size-select__control">S</span>
+              </label>
+            </li>
+            <li class="size-select__item">
+              <label class="size-select__label">
+                <span class="visually-hidden">Средний размер</span>
+                <input class="visually-hidden size-select__input" type="radio" name="size" value="m">
+                <span class="size-select__control">M</span>
+              </label>
+            </li>
+            <li class="size-select__item">
+              <label class="size-select__label">
+                <span class="visually-hidden">Большой размер</span>
+                <input class="visually-hidden size-select__input" type="radio" name="size" value="l">
+                <span class="size-select__control">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="size-select__button-wrapper">
+          <button class="size-select__button button button--fill" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 
