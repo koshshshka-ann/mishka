@@ -50,17 +50,17 @@
 
 .form-intro__description-container {
   padding-top: 17px;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;
-    padding-bottom: 63px;
+    padding-bottom: 65px;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 99px;
-    padding-bottom: 64px;
+    padding-bottom: 60px;
   }
 }
 

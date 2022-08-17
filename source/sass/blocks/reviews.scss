@@ -160,7 +160,7 @@
 .reviews__author-nickname {
   font-style: normal;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 35px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -191,9 +191,9 @@
     width: 175px;
     border: none;
     position: absolute;
-    bottom: 136px;
+    bottom: 135px;
     left: 50%;
-    transform: translateX(159px);
+    transform: translateX(140px);
 
 
     &::after {
@@ -204,7 +204,7 @@
   @media (min-width: $desktop-width) {
     bottom: 189px;
     left: auto;
-    right: 0;
+    right: 19px;
     transform: none;
   }
 }
@@ -217,7 +217,7 @@
   border: none;
   background-color: $white;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 10px left 38px;
 
   &--prev {
     background-image: url("../img/icons/icon-arrow-left.svg");
@@ -239,16 +239,16 @@
 .reviews__button-wrapper {
   width: 260px;
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 36px;
 
   @media (min-width: $tablet-width) {
     width: 175px;
     margin: 0;
     padding-top: 0;
     position: absolute;
-    top: 79px;
+    top: 78px;
     left: 50%;
-    transform: translateX(159px);
+    transform: translateX(160px);
   }
 
   @media (min-width: $desktop-width) {

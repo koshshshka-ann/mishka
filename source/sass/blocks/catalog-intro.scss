@@ -1,12 +1,12 @@
 .catalog-intro {
   background-color: $basic-grey-background;
-  padding-top: 73px;
-  padding-bottom: 74px;
+  padding-top: 74px;
+  padding-bottom: 73px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    padding-top: 34px;
-    padding-bottom: 87px;
+    padding-top: 36px;
+    padding-bottom: 85px;
     position: relative;
 
     &::after {

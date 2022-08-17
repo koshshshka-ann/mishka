@@ -2,7 +2,7 @@
   &--opened .main-nav__toggle,
   &--closed .main-nav__toggle {
     position: absolute;
-    top: 29px;
+    top: 27px;
     right: 0;
     width: 24px;
     height: 24px;
@@ -91,7 +91,7 @@
 .main-nav__logo-link {
   width: 86px;
   margin: 0 auto;
-  padding-right: 10px;
+  padding-right: 2px;
   display: block;
   cursor: pointer;
 
@@ -190,8 +190,12 @@
 }
 
 .main-nav__item {
-  min-height: 79px;
+  min-height: 80px;
   position: relative;
+
+  &--user {
+    min-height: 78px;
+  }
 
   &::after {
     content: "";
@@ -254,9 +258,9 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  padding-top: 26.5px;
+  padding-top: 26px;
   padding-bottom: 28px;
-  padding-left: 50px;
+  padding-left: 40px;
   width: 260px - 50px;
   text-decoration: none;
   font-weight: 700;
@@ -264,6 +268,10 @@
   line-height: 24px;
   color: $black;
   cursor: pointer;
+
+  &--main {
+    padding-top: 29px;
+  }
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -283,7 +291,7 @@
 
     &--main {
       font-size: 15px;
-      width: 167px;
+      width: 168px;
       padding-top: 20px;
       padding-bottom: 21px;
       padding-left: 0;
@@ -303,7 +311,7 @@
     &--cart {
       padding-top: 32px;
       padding-bottom: 32px;
-      padding-left: 82px;
+      padding-left: 84px;
     }
   }
 

@@ -18,10 +18,10 @@
 
   &--index {
     top: 1046px;
+  }
 
-    &--catalog {
-      top: 801px;
-    }
+  &--catalog {
+    top: 801px;
   }
 
   @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
 .modal__wrapper {
   width: 260px;
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-bottom: 46px;
 
   @media (min-width: $tablet-width) {

@@ -19,13 +19,13 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 74px;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 668px;
     padding-top: 88px;
-    padding-bottom: 375px;
+    padding-bottom: 372px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +83,7 @@
       position: absolute;
       top: 23px;
       left: 50%;
-      transform: translateX(84px);
+      transform: translateX(90px);
       opacity: 0.5;
     }
   }
