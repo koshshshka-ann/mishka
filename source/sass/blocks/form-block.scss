@@ -66,20 +66,10 @@
     &--contacts {
       display: block;
     }
-
-    &--submit {
-      justify-content: space-between;
-      align-items: baseline;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1040px - 110px;
-
-    &--submit {
-      box-sizing: border-box;
-      width: 700px;
-    }
   }
 }
 
@@ -520,37 +510,5 @@
     &--email {
       right: 4px;
     }
-  }
-}
-
-.form-block__submit-area {
-  width: 260px;
-  margin: 0 auto;
-  padding-bottom: 53px;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 33px;
-  }
-}
-
-.form-block__submit-note {
-  margin: 0;
-  padding-bottom: 30px;
-  font-size: 14px;
-  line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 10px;
-    font-size: 17px;
-    line-height: 30px;
-  }
-}
-
-.form-block__button-wrapper {
-  @media (min-width: $tablet-width) {
-    width: 230px;
-    order: -1;
   }
 }
