@@ -130,6 +130,9 @@
   position: relative;
 
   &--email {
+    text-decoration: none;
+    color: $basic-grey;
+
     &::after {
       content: "";
       width: 100%;
@@ -138,6 +141,14 @@
       position: absolute;
       left: 0;
       bottom: 2px;
+    }
+
+    &:hover {
+      color: $mint-link;
+    }
+
+    &:active::after {
+      opacity: 0.1;
     }
   }
 
