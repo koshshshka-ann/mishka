@@ -301,16 +301,16 @@
     &--cart {
       width: max-content;
       min-height: 88px - 32px - 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
 
     &--search {
-      padding: 0;
+      padding-left: 0;
       min-width: 82px;
     }
 
     &--cart {
-      padding-top: 32px;
-      padding-bottom: 32px;
       padding-left: 84px;
     }
   }

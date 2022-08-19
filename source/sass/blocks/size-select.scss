@@ -47,6 +47,10 @@
   }
 }
 
+.size-select__input:focus ~ .size-select__control {
+  outline: $black solid 1px;
+}
+
 .size-select__input[type="radio"]:checked + .size-select__control {
   border-color: $mint-light;
 }
