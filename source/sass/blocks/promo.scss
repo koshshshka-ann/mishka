@@ -18,7 +18,7 @@
 .promo__title {
   width: 260px;
   margin: 0 auto;
-  padding-top: 74px;
+  padding-top: 75px;
   padding-bottom: 119px;
   text-align: center;
 
@@ -83,7 +83,7 @@
       position: absolute;
       top: 23px;
       left: 50%;
-      transform: translateX(90px);
+      transform: translateX(83px);
       opacity: 0.5;
     }
   }
@@ -125,7 +125,8 @@
     &--interior {
       &::after {
         top: 30px;
-        right: 36px;
+        left: 257px;
+        transform: none;
       }
     }
 
@@ -142,8 +143,18 @@
     padding-right: 350px;
     padding-left: 37px;
 
+    &--interior {
+      &::after {
+        top: 30px;
+        right: 36px;
+        left: auto;
+      }
+    }
+
     &--toys {
       &::after {
+        transform: none;
+        left: auto;
         right: 35px;
       }
     }

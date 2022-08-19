@@ -1,5 +1,5 @@
 .week-product {
-  padding-top: 32px;
+  padding-top: 33px;
   padding-bottom: 36px;
   position: relative;
 
@@ -166,7 +166,7 @@
     line-height: 30px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 50px;
   }
 }
@@ -183,6 +183,10 @@
   padding-top: 8px;
   padding-bottom: 12px;
   border-bottom: 1px solid $basic-grey-lines;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 11px;
+  }
 }
 
 .week-product__index,
