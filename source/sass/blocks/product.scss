@@ -117,6 +117,14 @@
 .product__title-link {
   text-decoration: none;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__title {

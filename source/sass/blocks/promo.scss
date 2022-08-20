@@ -58,6 +58,13 @@
   &--toys {
     background-color: $mint-medium;
   }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      padding-bottom: 5px;
+      transform: translateY(-5px);
+    }
+  }
 }
 
 .promo__button {

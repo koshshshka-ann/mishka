@@ -397,9 +397,9 @@
   }
 }
 
-.form-block__input:focus-within ~ .form-block__control--radio,
-.form-block__input:focus-within ~ .form-block__control--checkbox {
-  outline: $black solid 1px;
+.form-block__input:focus ~ .form-block__control--radio,
+.form-block__input:focus ~ .form-block__control--checkbox {
+  border-color: $mint-elements;
 }
 
 .form-block__input {
@@ -437,6 +437,16 @@
     }
 
     &:active + .form-block__icon {
+      fill: $mint-elements;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $mint-elements;
+    }
+
+    &:focus + .form-block__icon {
+      opacity: 1;
       fill: $mint-elements;
     }
   }
@@ -487,7 +497,8 @@
     }
 
     &:focus {
-      outline: $black solid 1px;
+      outline: none;
+      border-color: $mint-elements;
     }
 
     @media (min-width: $desktop-width) {
