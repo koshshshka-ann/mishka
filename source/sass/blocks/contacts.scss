@@ -173,6 +173,7 @@
 
 .contacts__map-wrapper {
   padding-bottom: 40px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 55px;
@@ -184,11 +185,63 @@
   }
 }
 
+.contacts__image-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 67px;
+    height: 100px;
+    background-image: url("../img/map-pin.svg");
+    position: absolute;
+    top: 145px;
+    right: 115px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+
+    &::after {
+      top: 139px;
+      right: 338px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+
+    &::after {
+      top: 146px;
+      right: 220px;
+    }
+  }
+}
+
+.contacts__map-image {
+  display: block;
+  width: 320px;
+  height: 455px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+  }
+}
+
 .contacts__map {
   width: 100%;
   height: 455px;
   display: block;
   border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     height: 457px;
