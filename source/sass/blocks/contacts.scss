@@ -12,7 +12,6 @@
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 105px;
-    display: flex;
     position: relative;
   }
 }
@@ -93,6 +92,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding-bottom: 55px;
   }
 }
 
@@ -182,6 +182,9 @@
   @media (min-width: $desktop-width) {
     width: 527px;
     padding-bottom: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
   }
 }
 
@@ -257,8 +260,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 107px;
-    left: 175px;
+    margin: 0;
+    padding-left: 175px;
   }
 }
