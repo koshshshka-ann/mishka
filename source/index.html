@@ -117,8 +117,11 @@
         </div>
         <div class="week-product__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/tripple-set-desktop.webp 1x, img/tripple-set-desktop@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/tripple-set-desktop.jpg 1x, img/tripple-set-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/tripple-set-tablet.webp 1x, img/tripple-set-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/tripple-set-tablet.jpg 1x, img/tripple-set-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/tripple-set-mobile.webp 1x, img/tripple-set-mobile@2x.webp 2x">
             <img class="week-product__image" src="img/tripple-set-mobile.jpg" srcset="img/tripple-set-mobile@2x.jpg 2x" alt="Набор из трёх вязаных корзинок в трёх размерах и двух расцветках">
           </picture>
         </div>
@@ -181,7 +184,7 @@
         </button>
       </div>
       <div class="reviews__button-wrapper">
-        <button class="reviews__button button">Написать</button>
+        <a class="reviews__button button" href="#">Написать</a>
       </div>
     </section>
     <section class="contacts">
@@ -192,7 +195,7 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <span class="contacts__label">e-mail:</span>
-            <span class="contacts__value contacts__value--email">info@mimimishkashop.ru</span>
+            <a class="contacts__value contacts__value--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts__item">
             <span class="contacts__label">адрес:</span>
@@ -203,10 +206,20 @@
         </ul>
       </div>
       <div class="contacts__map-wrapper">
+        <div class="contacts__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <img class="contacts__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта расположения нашего офиса">
+          </picture>
+        </div>
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac06c596420cfd427d2706cb4f9d95f4d2822bdfd76f4a6ce61b198c45a114468&amp;source=constructor" height="400"></iframe>
       </div>
       <div class="contacts__button-wrapper">
-        <button class="button contacts__button">Напишите нам</button>
+        <a class="button contacts__button" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -290,8 +303,8 @@
             </li>
           </ul>
         </fieldset>
-        <div class="size-select__button-wrapper">
-          <button class="size-select__button button button--fill" type="submit">Добавить</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button button button--fill" type="submit">Добавить</button>
         </div>
       </form>
     </div>

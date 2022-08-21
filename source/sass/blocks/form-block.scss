@@ -145,6 +145,8 @@
   width: fit-content;
   margin: 0;
   padding-right: 19px;
+  display: block;
+  font-weight: 700;
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
@@ -153,6 +155,7 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
+    min-width: 74px;
     padding-right: 0;
     background-color: transparent;
   }
@@ -318,43 +321,32 @@
   position: relative;
 
   &--radio {
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     margin-right: 20px;
     border: 2px solid $basic-grey;
     border-radius: 50%;
   }
 
   &--checkbox {
-    width: 38px;
-    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
     margin-right: 23px;
     border: 2px solid $basic-grey;
   }
 
   @media (min-width: $tablet-width) {
     &--radio {
-      width: 50px;
-      height: 50px;
+      min-width: 50px;
+      min-height: 50px;
       margin-right: 27px;
     }
 
     &--checkbox {
-      width: 52px;
-      height: 52px;
+      min-width: 52px;
+      min-height: 52px;
       margin-right: 28px;
     }
-  }
-}
-
-.form-block__input + .form-block__control--radio,
-.form-block__input + .form-block__control--checkbox {
-  &:hover {
-    border-color: $mint-elements;
-  }
-
-  &:active {
-    border-color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -394,17 +386,35 @@
   }
 }
 
+.form-block__input + .form-block__control--radio,
+.form-block__input + .form-block__control--checkbox {
+  &:hover {
+    border-color: $mint-elements;
+  }
+
+
+  &:active {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form-block__input:focus ~ .form-block__control--radio,
+.form-block__input:focus ~ .form-block__control--checkbox {
+  border-color: $mint-elements;
+}
+
 .form-block__input {
   box-sizing: border-box;
   padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-grey;
 
   &--name,
   &--contacts {
     width: 100%;
     height: 52px;
-    font-size: 17px;
-    line-height: 18px;
-    color: $basic-grey;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid $basic-grey;
@@ -430,6 +440,20 @@
     &:active + .form-block__icon {
       fill: $mint-elements;
     }
+
+    &:focus {
+      outline: none;
+      border-color: $mint-elements;
+    }
+
+    &:focus + .form-block__icon {
+      opacity: 1;
+      fill: $mint-elements;
+    }
+  }
+
+  &--contacts {
+    padding-right: 40px;
   }
 
   @media (min-width: $tablet-width) {
@@ -453,6 +477,21 @@
     &--last-name {
       padding-top: 4px;
     }
+
+    &--first-name,
+    &--last-name,
+    &--father-name {
+      padding-right: 16px;
+    }
+
+    &--email,
+    &--phone {
+      padding-right: 77px;
+
+      @media (min-width: $desktop-width) {
+        padding-right: 50px;
+      }
+    }
   }
 
   &--adding {
@@ -460,14 +499,11 @@
     width: 100%;
     height: 142px;
     padding: 17px;
-    font-size: 17px;
-    line-height: 18px;
-    color: $basic-grey;
     border: 2px solid $basic-grey;
     resize: none;
 
     &::placeholder {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Open Sans", "Arial", sans-serif;
       color: $black;
       opacity: 0.3;
     }
@@ -477,6 +513,11 @@
     }
 
     &:active {
+      border-color: $mint-elements;
+    }
+
+    &:focus {
+      outline: none;
       border-color: $mint-elements;
     }
 

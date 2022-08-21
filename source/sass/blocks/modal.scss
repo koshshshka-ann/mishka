@@ -77,3 +77,10 @@
     line-height: 57px;
   }
 }
+
+.modal__button-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

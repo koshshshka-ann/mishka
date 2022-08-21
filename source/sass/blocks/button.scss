@@ -4,6 +4,7 @@
   padding-top: 14px;
   padding-bottom: 14px;
   display: inline-block;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -22,6 +23,10 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: $black solid 1px;
   }
 
   @media (min-width: $tablet-width) {
